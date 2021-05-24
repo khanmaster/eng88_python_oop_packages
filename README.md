@@ -17,3 +17,10 @@ print(math.floor(num_float))
 print(" ceil() method rounds the figure to higher end of the value ")
 print(math.ceil(num_float))
 ```
+#### What are the FOUR PILLARS of OOP
+
+- Abstraction
+- Inheritance
+- Encapsulation
+  - _dob = 01/01/1991
+- Polymorphism

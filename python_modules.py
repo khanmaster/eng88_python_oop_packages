@@ -17,19 +17,36 @@
 # print(math.floor(num1))
 # # what is the use case
 # os , sys are used to get information about your localhost/your machine such as name, path etc
+#
+# import os, sys, datetime, math
+#
+# print(os.cpu_count())
+# print(datetime.datetime.today())
+#
+# # % ? provides remainder value
+# print(math.remainder(1, 5))
 
-import os, sys
+
+
+
+
+
+
 
 # working_dir = os.getcwd()
 # print("This is your current working Dir " + working_dir)
-#
+# #
 # system_path = sys.path
 # print("This is the path " + str(system_path))
+#
+#
+# def current_system_path():
+#     print("This is your current path ")
+#     return sys.path
+# print(current_system_path())
 
-def current_system_path():
-    print("This is your current path ")
-    return sys.path
-print(current_system_path())
+
+
 
 
 
@@ -60,3 +77,18 @@ print(current_system_path())
 #     return sys.path
 #
 # print(current_system_path())
+
+
+# Lambda's work on the bases of lambda arguments : expression and in this case we're doing nothing more than name a variable to include a Lambda and although this works,
+# Looks kinda pretty in one line, it's not a clean nor understandable way of writing code
+
+def _add(num1, num2):
+    return num1 + num2
+
+# arguments:expression
+addition = lambda num1, num2: num1 + num2 # calculating the expresstion
+
+print("value returned by add() function")
+print(add(2, 2))
+print(" value returned using Lambda function ")
+print(addition(7, 2))
